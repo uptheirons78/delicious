@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
+//import storeController with the all different controller
+const storeController = require('../controllers/storeController');
 
-// Do work here
-router.get('/', (req, res) => {
-  res.send('Hey! It works!');
-});
+//use the homePage controller
+router.get('/', storeController.homePage);
 
 module.exports = router;

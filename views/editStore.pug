@@ -1,0 +1,10 @@
+extends layout
+
+//- this is how we can include a mixin in a file
+include mixins/_storeForm
+
+block content
+	.inner
+		h2= title
+		//- here we use the form mixin
+		+storeForm()
